@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_security_group" "wordpress_sg" {
+resource "aws_security_group" "new_wordpress_sg" {
   name        = "wordpress-sg"
   description = "Allow HTTP, HTTPS, SSH, and MySQL traffic"
 
