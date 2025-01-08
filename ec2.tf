@@ -44,7 +44,7 @@ resource "aws_security_group" "wordpress_sg" {
 
 # Create an EC2 instance for WordPress
 resource "aws_instance" "wordpress" {
-  ami           = "ami-0166fe664262f664c"
+  ami           = "ami-0ca9fb66e076a6e32"
   instance_type = "t2.micro"
   key_name      = "spandana"              
   subnet_id     = "subnet-0c85ac199c0740b9f"            
