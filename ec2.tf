@@ -53,6 +53,6 @@ resource "aws_instance" "wordpress" {
   user_data = file("data.sh")            
 
   tags = {
-    Name = "POLL SCM"
+    Name = "Public Instance"
   }
 }
