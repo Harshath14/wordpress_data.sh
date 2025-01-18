@@ -2,8 +2,8 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_security_group" "wordpress_sg" {
-  name        = "wordpress-sg"
+resource "aws_security_group" "wordpress-sg5" {
+  name        = "wordpress-sg5"
   description = "Allow HTTP, HTTPS, SSH, and MySQL traffic"
 
   ingress {
@@ -48,7 +48,7 @@ resource "aws_instance" "wordpress" {
   instance_type = "t2.micro"
   key_name      = "aws2"              
   subnet_id     = "subnet-08f0e7d824c801144"            
-  security_groups = [aws_security_group.wordpress_sg.id]
+  security_groups = [aws_security_group.wordpress-sg5.id]
 
   user_data = file("data.sh")            
 
